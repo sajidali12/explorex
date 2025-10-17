@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --explorex-blue: #1565C0;
+  --explorex-green: #00E600;
+  --explorex-blue-dark: #0D47A1;
+  --explorex-green-light: #4AFF4A;
 }
 
 @theme inline {
@@ -10,6 +14,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-explorex-blue: var(--explorex-blue);
+  --color-explorex-green: var(--explorex-green);
+  --color-explorex-blue-dark: var(--explorex-blue-dark);
+  --color-explorex-green-light: var(--explorex-green-light);
 }
 
 @media (prefers-color-scheme: dark) {
