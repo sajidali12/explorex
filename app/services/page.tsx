@@ -373,7 +373,7 @@ export default function ServicesPage() {
             {[
               {
                 icon: <Award className="w-10 h-10" />,
-                title: "15+ Years Experience",
+                title: "5+ Years Experience",
                 description: "Extensive expertise in international education and immigration"
               },
               {

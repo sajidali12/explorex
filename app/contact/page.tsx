@@ -10,7 +10,8 @@ import {
   Globe,
   Star,
   Award,
-  Building
+  Building,
+  Mail
 } from "lucide-react";
 
 export default function ContactPage() {
@@ -61,11 +62,7 @@ export default function ContactPage() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-[#00E600]" />
-                  <span className="text-gray-700">Mon - Fri: 9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-[#00E600]" />
-                  <span className="text-gray-700">Sat: 9:00 AM - 2:00 PM</span>
+                  <span className="text-gray-700">Mon - Sat: 11:00 AM - 7:00 PM</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-[#00E600]" />
@@ -109,16 +106,48 @@ export default function ContactPage() {
                     0314-5533941
                   </a>
                 </div>
+                <div className="bg-white/10 rounded-xl p-4">
+                  <p className="text-gray-100 mb-2">Email</p>
+                  <a href="mailto:complaints@explorex.com.pk" className="text-lg font-semibold text-[#00E600] hover:text-[#4AFF4A] transition-colors break-all">
+                    complaints@explorex.com.pk
+                  </a>
+                </div>
                 <p className="text-gray-200 text-sm">
                   We take your feedback seriously and ensure prompt resolution
                 </p>
               </div>
             </div>
           </div>
+
+          {/* Email Addresses Section */}
+          <div className="mt-12 bg-white rounded-2xl shadow-lg p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <Mail className="w-6 h-6 text-[#1565C0]" />
+              <h3 className="text-xl font-bold text-[#1565C0]">Contact Us</h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+              <a href="mailto:accounts@explorex.com.pk" className="text-sm text-gray-700 hover:text-[#1565C0] transition-colors bg-gray-50 rounded-lg p-3 hover:bg-gray-100">
+                <span className="font-medium block text-xs text-gray-500 mb-1">Accounts Team</span>
+                <span className="break-all">accounts@explorex.com.pk</span>
+              </a>
+              <a href="mailto:customersupport@explorex.com.pk" className="text-sm text-gray-700 hover:text-[#1565C0] transition-colors bg-gray-50 rounded-lg p-3 hover:bg-gray-100">
+                <span className="font-medium block text-xs text-gray-500 mb-1">Customer Support Team</span>
+                <span className="break-all">customersupport@explorex.com.pk</span>
+              </a>
+              <a href="mailto:processingteam@explorex.com.pk" className="text-sm text-gray-700 hover:text-[#1565C0] transition-colors bg-gray-50 rounded-lg p-3 hover:bg-gray-100">
+                <span className="font-medium block text-xs text-gray-500 mb-1">Processing Team</span>
+                <span className="break-all">processingteam@explorex.com.pk</span>
+              </a>
+              <a href="mailto:recruitment@explorex.com.pk" className="text-sm text-gray-700 hover:text-[#1565C0] transition-colors bg-gray-50 rounded-lg p-3 hover:bg-gray-100">
+                <span className="font-medium block text-xs text-gray-500 mb-1">Recruitment Team</span>
+                <span className="break-all">recruitment@explorex.com.pk</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
-      
+
 
       {/* Why Contact Us */}
       <section className="py-20 bg-gray-50">
@@ -152,7 +181,7 @@ export default function ContactPage() {
               {
                 icon: <Shield className="w-10 h-10" />,
                 title: "Trusted Guidance",
-                description: "15+ years of proven expertise and success stories"
+                description: "5+ years of proven expertise and success stories"
               },
               {
                 icon: <Star className="w-10 h-10" />,

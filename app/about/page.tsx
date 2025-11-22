@@ -43,7 +43,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Founded with a vision to make global education accessible to everyone, ExploreX Travel & Educational Consultant has been serving students and professionals for over 15 years.
+                  Founded with a vision to make global education accessible to everyone, ExploreX Travel & Educational Consultant has been serving students and professionals for over 5 years.
                 </p>
                 <p>
                   What started as a small consultancy in Rawalpindi has grown into a trusted name, helping thousands of students achieve their dreams of studying and working abroad.
@@ -161,7 +161,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6">
                 {[
-                  "15+ years of proven expertise in international education",
+                  "5+ years of proven expertise in international education",
                   "98% visa success rate across all destinations",
                   "Partnerships with 200+ universities worldwide",
                   "Free counselling and university selection guidance",
@@ -170,8 +170,8 @@ export default function AboutPage() {
                   "Transparent process with no hidden charges",
                   "Dedicated team of experienced counsellors"
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="bg-[#00E600] p-2 rounded-full mt-1">
+                  <div key={index} className="flex items-center gap-4">
+                    <div className="bg-[#00E600] p-2 rounded-full flex-shrink-0">
                       <CheckCircle2 className="w-5 h-5 text-white" />
                     </div>
                     <p className="text-lg text-gray-700">{item}</p>
@@ -183,48 +183,28 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-[#1565C0] via-[#0D47A1] to-[#1565C0] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Impact</h2>
-            <p className="text-xl text-gray-100">Numbers that speak for themselves</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "10,000+", label: "Students Guided" },
-              { number: "25+", label: "Countries" },
-              { number: "98%", label: "Success Rate" },
-              { number: "15+", label: "Years Experience" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-5xl md:text-6xl font-bold text-[#00E600] mb-2">{stat.number}</div>
-                <div className="text-lg text-gray-200">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1565C0] mb-6">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1565C0] via-[#0D47A1] to-[#1565C0] z-10"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070')] bg-cover bg-center opacity-20 z-0"></div>
+
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Start Your Journey?
           </h2>
-          <p className="text-xl text-gray-600 mb-10">
+          <p className="text-xl md:text-2xl mb-10 text-gray-100 max-w-3xl mx-auto">
             Let us help you achieve your dreams of studying or working abroad
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="bg-[#00E600] hover:bg-[#4AFF4A] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-xl text-lg"
+              className="inline-flex items-center gap-3 bg-[#00E600] hover:bg-[#4AFF4A] text-white font-bold px-12 py-5 rounded-full transition-all transform hover:scale-110 shadow-2xl text-lg"
             >
               Get Free Consultation
             </Link>
             <Link
               href="/services"
-              className="bg-[#1565C0] hover:bg-[#0D47A1] text-white font-bold px-10 py-4 rounded-full transition-all transform hover:scale-105 shadow-xl text-lg"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border-2 border-white text-white font-bold px-12 py-5 rounded-full transition-all transform hover:scale-110"
             >
               Explore Services
             </Link>

@@ -407,10 +407,14 @@ export default function Home() {
                   <div className="bg-white/20 p-4 rounded-xl mr-4">
                     <Shield className="w-8 h-8 text-white" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="font-bold text-xl mb-2">For Complaints</h3>
                     <p className="text-gray-100 mb-1">Compliance Officer</p>
-                    <a href="tel:+923145533941" className="text-[#00E600] hover:text-[#4AFF4A] transition-colors font-bold text-lg">0314-5533941</a>
+                    <a href="tel:+923145533941" className="text-[#00E600] hover:text-[#4AFF4A] transition-colors font-bold text-lg block mb-3">0314-5533941</a>
+                    <div className="bg-white/10 rounded-lg p-3 mt-2">
+                      <p className="text-gray-100 text-sm mb-1">Email</p>
+                      <a href="mailto:complaints@explorex.com.pk" className="text-[#00E600] hover:text-[#4AFF4A] transition-colors font-semibold text-sm break-all">complaints@explorex.com.pk</a>
+                    </div>
                   </div>
                 </div>
               </div>
